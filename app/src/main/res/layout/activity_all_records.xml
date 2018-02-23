@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/action_bar_icon"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/action_bar_icon_offset"
+            android:onClick="back"
+            android:src="@drawable/top_bar_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/action_bar_text_offset"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/all_records"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/search_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/start_time_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/measurment_records_check_all_list_padding_top"
+                android:gravity="center"
+                android:text="@string/start_date_time"
+                android:textSize="@dimen/measurment_records_check_all_time_text_size" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/measurment_records_check_all_time_text_size"
+                android:text="-"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/measurment_records_check_all_list_padding_top"
+                android:text="@string/end_date_time"
+                android:textSize="@dimen/measurment_records_check_all_time_text_size" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/end_time_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="true"
+                android:editable="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/measurment_records_check_all_time_text_size"
+                android:textStyle="bold"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="5/26"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/measurment_records_check_all_time_text_size"
+                android:text="~"/>
+
+            <EditText
+                android:id="@+id/end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/measurment_records_check_all_time_text_size"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:hint="5/26"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/measurment_records_check_all_list_dash_line"
+            android:layout_marginTop="@dimen/measurment_records_check_all_list_padding_top"
+            android:background="@color/darkgray"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/hide_search_wrapper"
+        android:layout_width="@dimen/measurment_records_check_all_search_bar_width"
+        android:layout_height="@dimen/measurment_records_check_all_search_bar_height"
+        android:layout_gravity="center"
+        android:src="@drawable/pack_arrow" />
+
+
+    <com.elook.client.ui.PullToRefreshListView
+        android:id="@+id/measurement_records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/measurment_records_check_all_list_view_offset"
+        android:layout_marginRight="@dimen/measurment_records_check_all_list_view_offset" />
+</LinearLayout>

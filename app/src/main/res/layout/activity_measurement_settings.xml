@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/action_bar_icon"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/action_bar_icon_offset"
+                android:onClick="back"
+                android:src="@drawable/top_bar_back" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/login_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/activity_measurement_settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_bar_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginBottom="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginLeft="@dimen/measurment_settings_view_margin_h"
+        android:layout_marginRight="@dimen/measurment_settings_view_margin_h"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/measurment_settings_dev_icon_size"
+            android:layout_height="@dimen/measurment_settings_dev_icon_size"
+            android:src="@drawable/choose_icon_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/measurment_settings_margin_left"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/measurement_settings_deviceId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/measurement_settings_deviceid"
+                android:textColor="@color/black"
+                android:textSize="@dimen/measurment_settings_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/measurement_settings_bind_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/measurement_settings_bind_time"
+                android:textSize="@dimen/measurment_settings_sub_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_line_height"
+        android:background="@color/darkgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_list_height"
+        android:layout_marginTop="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginBottom="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginLeft="@dimen/measurment_settings_view_margin_h"
+        android:layout_marginRight="@dimen/measurment_settings_view_margin_h"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/measurement_settings_device_office_id"
+            android:textSize="@dimen/measurment_settings_text_size" />
+
+        <EditText
+            android:id="@+id/measurement_settings_payid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:singleLine="true"
+            android:inputType="number"
+            android:gravity="left|center"
+            android:hint="@string/measurement_settings_device_office_id_hint"
+            android:textSize="@dimen/measurment_settings_sub_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_line_height"
+        android:background="@color/darkgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_list_height"
+        android:layout_marginTop="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginBottom="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginLeft="@dimen/measurment_settings_view_margin_h"
+        android:layout_marginRight="@dimen/measurment_settings_view_margin_h"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/measurement_settings_device_nick_name"
+            android:textSize="@dimen/measurment_settings_text_size" />
+
+        <EditText
+            android:id="@+id/measurement_settings_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="@string/measurement_settings_device_nick_name_default"
+            android:textSize="@dimen/measurment_settings_sub_text_size" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_line_height"
+        android:background="@color/darkgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_list_height"
+        android:layout_marginTop="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginBottom="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginLeft="@dimen/measurment_settings_view_margin_h"
+        android:layout_marginRight="@dimen/measurment_settings_view_margin_h"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/show_pic_of_data_of_every_day"
+            android:textSize="@dimen/measurment_settings_text_size" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+            <ToggleButton
+                android:id="@+id/remind_usage_up_switcher"
+                android:layout_width="@dimen/measurment_settings_toggle_button_width"
+                android:layout_height="@dimen/measurment_settings_toggle_button_height"
+                android:background="@drawable/switcher_off"
+                android:textOn="@null"
+                android:textOff="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_line_height"
+        android:background="@color/darkgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_list_height"
+        android:layout_marginTop="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginBottom="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginLeft="@dimen/measurment_settings_view_margin_h"
+        android:layout_marginRight="@dimen/measurment_settings_view_margin_h"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_gravity="left|center">
+
+            <ImageView
+                android:layout_width="@dimen/measurment_settings_location_icon"
+                android:layout_height="@dimen/measurment_settings_location_icon"
+                android:gravity="center"
+                android:src="@drawable/u261" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/location_of_live"
+            android:textSize="@dimen/measurment_settings_text_size" />
+
+        <EditText
+            android:id="@+id/measurement_settings_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/location_of_live_default"
+            android:textSize="@dimen/measurment_settings_sub_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/measurement_settings_location_button"
+                android:layout_width="@dimen/measurment_settings_location_icon"
+                android:layout_height="@dimen/measurment_settings_location_icon"
+                android:gravity="right"
+                android:src="@drawable/u150" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_line_height"
+        android:background="@color/darkgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_list_height"
+        android:layout_marginTop="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginBottom="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginLeft="@dimen/measurment_settings_view_margin_h"
+        android:layout_marginRight="@dimen/measurment_settings_view_margin_h"
+        android:clickable="true"
+        android:onClick="startRemind"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/frequence_of_device_data"
+            android:textSize="@dimen/measurment_settings_text_size" />
+
+        <Spinner
+            android:id="@+id/measurement_settings_updelay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:entries="@array/updelay_spingarr" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_line_height"
+        android:background="@color/darkgray" />
+
+    <Button
+        android:id="@+id/measurement_settings_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_settings_list_height"
+        android:layout_marginTop="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginBottom="@dimen/measurment_settings_view_margin_v"
+        android:layout_marginLeft="@dimen/measurment_settings_view_margin_h"
+        android:layout_marginRight="@dimen/measurment_settings_view_margin_h"
+        android:background="@drawable/white_button_pressed_bg"
+        android:text="@string/save" />
+</LinearLayout>

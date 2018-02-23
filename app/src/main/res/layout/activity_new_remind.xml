@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/action_bar_icon"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/action_bar_icon_offset"
+                android:onClick="back"
+                android:src="@drawable/top_bar_back" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/login_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/add_new_remind"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_bar_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/measurment_add_remind_layout_margin"
+        android:layout_marginLeft="@dimen/measurment_add_remind_layout_margin"
+        android:layout_marginRight="@dimen/measurment_add_remind_layout_margin"
+        android:layout_marginTop="@dimen/measurment_add_remind_layout_margin"
+        android:clickable="true"
+        android:onClick="showDeviceConfig"
+        android:weightSum="9"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/usage_up_limit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/measurment_add_remind_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:gravity="center|left"
+                android:text="@string/remind_usage_over"
+                android:textSize="@dimen/measurment_add_remind_sub_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/measurment_add_remind_image_height"
+                android:gravity="center"
+                android:src="@drawable/u150" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/measurment_add_remind_layout_margin"
+        android:layout_marginLeft="@dimen/measurment_add_remind_layout_margin"
+        android:layout_marginRight="@dimen/measurment_add_remind_layout_margin"
+        android:layout_marginTop="@dimen/measurment_add_remind_layout_margin"
+        android:clickable="true"
+        android:onClick="showNotUseNotify"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/remind_no_usage"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/measurment_add_remind_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:gravity="center|left"
+                android:text="@string/remind_no_usage_notice"
+                android:textSize="@dimen/measurment_add_remind_sub_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/measurment_add_remind_image_height"
+                android:gravity="center"
+                android:src="@drawable/u150" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/measurment_add_remind_layout_margin"
+        android:layout_marginLeft="@dimen/measurment_add_remind_layout_margin"
+        android:layout_marginRight="@dimen/measurment_add_remind_layout_margin"
+        android:layout_marginTop="@dimen/measurment_add_remind_layout_margin"
+        android:clickable="true"
+        android:onClick="showEngneerDelay"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/remind_engneer_delay"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/measurment_add_remind_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:gravity="center|left"
+                android:text="@string/remind_engneer_delay_notice"
+                android:textSize="@dimen/measurment_add_remind_sub_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/measurment_add_remind_image_height"
+                android:gravity="center"
+                android:src="@drawable/u150" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

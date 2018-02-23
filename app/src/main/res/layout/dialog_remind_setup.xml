@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_add_remind_dialog_height"
+        android:layout_marginTop="@dimen/measurment_add_remind_dialog_margin_v"
+        android:layout_marginBottom="@dimen/measurment_add_remind_dialog_margin_v"
+        android:layout_marginLeft="@dimen/measurment_add_remind_dialog_margin_h"
+        android:layout_marginRight="@dimen/measurment_add_remind_dialog_margin_h"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textSize="@dimen/measurment_add_remind_dialog_text_size"
+                android:layout_weight="1"
+                android:text="@string/up_limit" />
+
+            <EditText
+                android:id="@+id/device_usage_thredhold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="8"
+                android:inputType="number"
+                android:singleLine="true"
+                android:background="@null" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m\u00B3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/measurment_add_remind_dialog_height"
+        android:layout_marginTop="@dimen/measurment_add_remind_dialog_margin_v"
+        android:layout_marginBottom="@dimen/measurment_add_remind_dialog_margin_v"
+        android:layout_marginLeft="@dimen/measurment_add_remind_dialog_margin_h"
+        android:layout_marginRight="@dimen/measurment_add_remind_dialog_margin_h"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textSize="@dimen/measurment_add_remind_dialog_text_size"
+                android:text="@string/limit_days" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/spinner2"
+                android:entries="@array/spingarr" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_device_config"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurment_add_remind_dialog_height"
+        android:layout_marginTop="@dimen/measurment_add_remind_dialog_margin_v"
+        android:layout_marginBottom="@dimen/measurment_add_remind_dialog_margin_v"
+        android:layout_marginLeft="@dimen/measurment_add_remind_dialog_margin_h"
+        android:layout_marginRight="@dimen/measurment_add_remind_dialog_margin_h"
+        android:background="@drawable/white_button_pressed_bg"
+        android:text="@string/confirm_add_new_remind"/>
+</LinearLayout>

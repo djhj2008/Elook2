@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="recordPanel">
+        <attr name="recordValue" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="recordsLayout">
+        <attr name="isDotPattern" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="actionbar">
+        <attr name="titleText" format="string"/>
+        <attr name="subTitleText" format="string" />
+    </declare-styleable>
+
+    <string-array name="warning_cycle">
+        <item>日</item>
+        <item>周</item>
+        <item>月</item>
+    </string-array>
+
+
+    <string-array name="device_type_entries">
+        <item>水表</item>
+        <item>电表</item>
+    </string-array>
+
+    <string-array name="location_entries">
+        <item>朝阳区兆维工业园B区</item>
+        </string-array>
+</resources>

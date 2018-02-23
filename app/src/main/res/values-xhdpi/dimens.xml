@@ -1,0 +1,235 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">28px</dimen>
+    <dimen name="activity_vertical_margin">28px</dimen>
+    <dimen name="activity_hight_line">3px</dimen>
+    <dimen name="action_bar_height">94px</dimen>
+    <dimen name="action_bar_icon">55px</dimen>
+    <dimen name="action_bar_icon_offset">30px</dimen>
+    <dimen name="action_bar_text_size">40px</dimen>
+    <dimen name="action_bar_text_offset">-85px</dimen>
+
+    <dimen name="login_action_bar_subtitle_offset">15px</dimen>
+    <dimen name="login_action_bar_sub_title_font_size">30px</dimen>
+    <dimen name="login_edit_text_font_size">28px</dimen>
+    <dimen name="login_find_pwd_font_size">25px</dimen>
+    <dimen name="login_button_font_size">29px</dimen>
+    <dimen name="login_licence_font_size">24px</dimen>
+    <dimen name="login_margin_top">217px</dimen>
+    <dimen name="login_edit_text_height">80px</dimen>
+    <dimen name="login_edit_text_width">443px</dimen>
+    <dimen name="login_find_pwd_margin_top">28px</dimen>
+    <dimen name="login_list_hight_line">1px</dimen>
+    <dimen name="login_list_padding">15px</dimen>
+    <dimen name="login_button_offset">65px</dimen>
+    <dimen name="login_find_pwd_exit_text_width">300px</dimen>
+
+    <dimen name="regist_list_top_offset">24px</dimen>
+    <dimen name="regist_list_left_offset">24px</dimen>
+    <dimen name="regist_edit_list_height">100px</dimen>
+    <dimen name="regist_edit_text_height">40px</dimen>
+    <dimen name="regist_edit_mid_text_height">35px</dimen>
+    <dimen name="regist_edit_sub_text_height">30px</dimen>
+    <dimen name="regist_edit_text_width">400px</dimen>
+    <dimen name="regist_edit_text_location_width">340px</dimen>
+    <dimen name="regist_button_top_offset">60px</dimen>
+
+    <dimen name="home_fragment_height">105px</dimen>
+    <dimen name="home_action_bar_height">@dimen/action_bar_height</dimen>
+    <dimen name="home_action_bar_title_font_size">34px</dimen>
+    <dimen name="home_action_bar_title_offset">18px</dimen>
+    <dimen name="home_action_bar_sub_title_font_size">28px</dimen>
+    <dimen name="home_action_bar_sub_title_offset">10px</dimen>
+    <dimen name="home_viewpager_height">325px</dimen>
+    <dimen name="home_viewpager_button_offset">30px</dimen>
+    <dimen name="home_viewpager_bottom_offset">15px</dimen>
+    <dimen name="home_notification_container_height">75px</dimen>
+    <dimen name="home_notification_button_height">40px</dimen>
+    <dimen name="home_main_content_height">100px</dimen>
+    <dimen name="home_main_content_offset">105px</dimen>
+    <dimen name="home_main_content_button_offset">15px</dimen>
+
+    <dimen name="home_checked_device_title_offset">15px</dimen>
+    <dimen name="home_checked_device_description_height">63px</dimen>
+    <dimen name="home_checked_device_description_font_size">28px</dimen>
+
+    <dimen name="home_listview_divider_height">41px</dimen>
+
+    <dimen name="home_measurement_core_margion_left">21px</dimen>
+    <dimen name="home_measurement_core_margion_right">21px</dimen>
+    <dimen name="home_measurement_core_margion_top">22px</dimen>
+    <dimen name="home_measurement_core_margion_bottom">27px</dimen>
+
+    <dimen name="home_measurement_icon_size">180px</dimen>
+    <dimen name="home_measurement_id_font_size">34px</dimen>
+    <dimen name="home_measurement_id_margin_left">8px</dimen>
+    <dimen name="home_measurement_usage_font_size">22px</dimen>
+    <dimen name="home_measurement_record_value_width">324px</dimen>
+    <dimen name="home_measurement_record_value_height">55px</dimen>
+    <dimen name="home_measurement_record_description_font_size">24px</dimen>
+    <dimen name="home_measurement_record_value_font_size">43px</dimen>
+    <dimen name="home_measurement_record_watch_padding">4px</dimen>
+    <dimen name="home_measurement_record_value_title_padding">14px</dimen>
+    <dimen name="home_measurement_record_enter_button">50px</dimen>
+    <dimen name="home_measurement_nickname_font_size">26px</dimen>
+    <dimen name="home_measurement_address_font_size">22px</dimen>
+    <dimen name="home_measurement_warning_font_size">21px</dimen>
+
+    <dimen name="home_measurement_add_device_height">94px</dimen>
+    <dimen name="home_measurement_add_device_width">484px</dimen>
+    <dimen name="home_measurement_add_device_font_size">40px</dimen>
+
+    <!--add device choose dev and scan-->
+    <dimen name="measurement_add_device_chose_bng_height">300px</dimen>
+    <dimen name="measurement_add_device_scan_str_offset">30px</dimen>
+    <dimen name="measurement_add_device_scan_icon_size">95px</dimen>
+    <dimen name="measurement_add_device_scan_text_size">60px</dimen>
+    <dimen name="measurement_add_device_list_width">190px</dimen>
+    <dimen name="measurement_add_device_list_height">130px</dimen>
+    <dimen name="measurement_add_device_list_icon_size">88px</dimen>
+    <dimen name="measurement_add_device_list_text_bg_width">360px</dimen>
+    <dimen name="measurement_add_device_list_text_size">34px</dimen>
+
+    <dimen name="measurement_detail_pattern_wrapper_height">450px</dimen>
+    <dimen name="measurement_detail_pattern_wrapper_paddingTop">26px</dimen>
+    <dimen name="measurement_detail_pattern_wrapper_paddingLeft">32px</dimen>
+    <dimen name="measurement_detail_pattern_wrapper_paddingRight">32px</dimen>
+    <dimen name="measurement_detail_parttern_padding_top">15px</dimen>
+    <dimen name="measurement_detail_pattern_button_text">34px</dimen>
+    <dimen name="measurement_detail_dashline_distance">50px</dimen>
+    <dimen name="measurement_detail_pattern_height">250px</dimen>
+    <dimen name="measurement_detail_pattern_offset">30px</dimen>
+
+    <dimen name="measurement_detail_record_higram_width">26px</dimen>
+    <dimen name="measurement_detail_record_view_margin_top">5px</dimen>
+    <dimen name="measurement_detail_record_view_margin_bottom">3px</dimen>
+    <dimen name="measurement_detail_record_value_tesxt_size">9px</dimen>
+    <dimen name="measurement_detail_record_data_text_size">22px</dimen>
+    <dimen name="measurement_detail_record_textpoint_distance">3px</dimen>
+    <dimen name="measurement_detail_record_dot_radius">2px</dimen>
+
+    <dimen name="measurement_day_record_show_width">80px</dimen>
+    <dimen name="measurement_day_record_show_height">39px</dimen>
+    <dimen name="measurement_day_record_show_offset">10px</dimen>
+    <dimen name="measurement_day_record_line_text_size">22px</dimen>
+    <dimen name="measurement_day_record_radius">6px</dimen>
+
+    <dimen name="measurment_records_check_all_font_size">22px</dimen>
+    <dimen name="measurment_records_check_all_button_height">40px</dimen>
+    <dimen name="measurment_records_check_all_button_margin_bottom">9px</dimen>
+    <dimen name="measurment_records_check_all_search_bar_width">80px</dimen>
+    <dimen name="measurment_records_check_all_search_bar_height">50px</dimen>
+    <dimen name="measurment_records_check_all_list_margin_left">34px</dimen>
+    <dimen name="measurment_records_check_all_list_image_height">30px</dimen>
+    <dimen name="measurment_records_check_all_list_height">90px</dimen>
+    <dimen name="measurment_records_check_all_list_padding_top">5px</dimen>
+    <dimen name="measurment_records_check_all_list_view_offset">15px</dimen>
+    <dimen name="measurment_records_check_all_list_dash_line">3px</dimen>
+    <dimen name="measurment_records_check_all_time_text_size">34px</dimen>
+    <dimen name="measurment_records_view_text_show">22px</dimen>
+    <dimen name="measurment_records_refrsh_text_size">30px</dimen>
+    <dimen name="measurment_records_refrsh_padding_top">10px</dimen>
+    <dimen name="measurment_records_dialog_preview_image_width">640px</dimen>
+    <dimen name="measurment_records_dialog_preview_image_height">480px</dimen>
+    <dimen name="measurment_records_dialog_preview_text_margin_top">10px</dimen>
+
+
+    <dimen name="measurment_notify_msg_text_size">22px</dimen>
+    <dimen name="measurment_notify_msg_height">80px</dimen>
+    <dimen name="measurment_notify_msg_top">8px</dimen>
+    <dimen name="measurment_notify_msg_button_height">50px</dimen>
+
+    <dimen name="measurment_notify_list_top">15px</dimen>
+    <dimen name="measurment_notify_list_height">50px</dimen>
+    <dimen name="measurment_notify_list_margin">15px</dimen>
+    <dimen name="measurment_notify_list_togglebutton_width">80px</dimen>
+    <dimen name="measurment_notify_list_togglebutton_height">40px</dimen>
+
+    <dimen name="measurment_notify_add_notify_button_offset">50px</dimen>
+    <dimen name="measurment_notify_add_notify_button_padding">15px</dimen>
+    <dimen name="measurment_notify_add_notify_button_text_size">34px</dimen>
+    <dimen name="measurment_notify_nousage_text_size">28px</dimen>
+    <dimen name="measurment_notify_rules_line">28px</dimen>
+    <dimen name="measurment_notify_sub_rules_line">3px</dimen>
+    <dimen name="measurment_notify_list_icon_size">30px</dimen>
+    <dimen name="measurment_notify_sub_list_height">80px</dimen>
+
+    <dimen name="measurment_notify_all_list_height">30px</dimen>
+    <dimen name="measurment_notify_all_list_margin">26px</dimen>
+    <dimen name="measurment_notify_all_list_big_text">39px</dimen>
+    <dimen name="measurment_notify_all_list_normal_text">34px</dimen>
+    <dimen name="measurment_notify_all_list_itme_button_height">60px</dimen>
+    <dimen name="measurment_notify_all_list_item_title">300px</dimen>
+
+    <dimen name="measurment_add_remind_layout_margin">30px</dimen>
+    <dimen name="measurment_add_remind_image_height">50px</dimen>
+    <dimen name="measurment_add_remind_text_size">34px</dimen>
+    <dimen name="measurment_add_remind_sub_text_size">28px</dimen>
+
+    <dimen name="measurment_add_remind_dialog_height">100px</dimen>
+    <dimen name="measurment_add_remind_dialog_text_size">34px</dimen>
+    <dimen name="measurment_add_remind_dialog_margin_v">30px</dimen>
+    <dimen name="measurment_add_remind_dialog_margin_h">80px</dimen>
+
+    <dimen name="measurment_settings_view_margin_h">50px</dimen>
+    <dimen name="measurment_settings_view_margin_v">15px</dimen>
+    <dimen name="measurment_settings_dev_icon_size">140px</dimen>
+    <dimen name="measurment_settings_margin_left">30px</dimen>
+    <dimen name="measurment_settings_text_size">34px</dimen>
+    <dimen name="measurment_settings_sub_text_size">28px</dimen>
+    <dimen name="measurment_settings_line_height">3px</dimen>
+    <dimen name="measurment_settings_list_height">100px</dimen>
+    <dimen name="measurment_settings_toggle_button_width">120px</dimen>
+    <dimen name="measurment_settings_toggle_button_height">60px</dimen>
+    <dimen name="measurment_settings_location_icon">50px</dimen>
+
+    <dimen name="person_center_photo_bg_height">380px</dimen>
+    <dimen name="person_center_photo_height">150px</dimen>
+    <dimen name="person_center_photo_width">150px</dimen>
+    <dimen name="person_center_photo_margin_top">50px</dimen>
+    <dimen name="person_center_phone_number_margin_top">30px</dimen>
+    <dimen name="person_center_phone_number_text_size">40px</dimen>
+    <dimen name="person_center_list_height">100px</dimen>
+    <dimen name="person_center_list_margin_h">28px</dimen>
+    <dimen name="person_center_list_icon">60px</dimen>
+    <dimen name="person_center_list_icon_margin">20px</dimen>
+    <dimen name="person_center_list_text_size">34px</dimen>
+    <dimen name="person_center_list_text_margin">8px</dimen>
+    <dimen name="person_center_list_enter_icon_height">50px</dimen>
+    <dimen name="person_center_button_height">80px</dimen>
+    <dimen name="person_center_button_margin_top">30px</dimen>
+    <dimen name="person_center_button_margin_h">80px</dimen>
+
+    <dimen name="notification_itme_bg_height">330px</dimen>
+    <dimen name="notification_itme_bg_margin_top">30px</dimen>
+    <dimen name="notification_itme_bg_margin_h">30px</dimen>
+    <dimen name="notification_itme_title_margin_top">22px</dimen>
+    <dimen name="notification_itme_title_margin_bottom">14px</dimen>
+    <dimen name="notification_itme_title_text_size">39px</dimen>
+    <dimen name="notification_itme_icon_size">160px</dimen>
+    <dimen name="notification_itme_sub_text_margin_top">22px</dimen>
+    <dimen name="notification_itme_sub_text_size">20px</dimen>
+
+    <dimen name="service_itme_height">330px</dimen>
+    <dimen name="service_itme_margin_top">30px</dimen>
+    <dimen name="service_itme_margin_h">30px</dimen>
+    <dimen name="service_itme_title_margin_top">22px</dimen>
+    <dimen name="service_itme_title_margin_bottom">14px</dimen>
+    <dimen name="service_itme_title_text_size">39px</dimen>
+    <dimen name="service_itme_icon_size">160px</dimen>
+    <dimen name="service_itme_sub_text_margin_top">22px</dimen>
+
+    <dimen name="wifi_config_icon_size">60px</dimen>
+    <dimen name="wifi_config_list_offset">8px</dimen>
+
+    <dimen name="init_device_top_margin">-150px</dimen>
+    <dimen name="init_device_sub_top_margin">60px</dimen>
+    <dimen name="init_device_bg_layer_width">269px</dimen>
+    <dimen name="init_device_bg_layer_height">269px</dimen>
+    <dimen name="init_device_button_bg_width">300px</dimen>
+
+    <dimen name="init_device_process_bar_width">500px</dimen>
+    <dimen name="init_device_process_bar_margin_left">50px</dimen>
+    <dimen name="init_device_process_bar_layout_height">136px</dimen>
+    <dimen name="init_device_process_bar_height">83px</dimen>
+</resources>

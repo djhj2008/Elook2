@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/action_bar_icon"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/action_bar_icon_offset"
+            android:onClick="back"
+            android:src="@drawable/top_bar_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/action_bar_text_offset"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/confirm_infomation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:src="@drawable/binding_logo"
+        />
+    <TextView
+        android:id="@+id/add_device_type_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:text="@string/measurement_water"/>
+
+    <TextView
+        android:id="@+id/add_device_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/gray"
+        android:text="@string/add_device_id"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_pressed_background"
+        android:textColor="@drawable/text_button_textcolor"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/bind_device_now"
+        android:onClick="startToBindDevice"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_pressed_background"
+        android:textColor="@drawable/text_button_textcolor"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/rescan_qr"
+        android:onClick="rescanQRCode"/>
+
+</LinearLayout>

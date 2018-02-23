@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/action_bar_icon"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/action_bar_icon_offset"
+            android:onClick="back"
+            android:src="@drawable/top_bar_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/action_bar_text_offset"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/choose_device"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_measurement_add_device"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurement_add_device_chose_bng_height"
+        android:background="@color/scangray"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="addMeasurement"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/measurement_add_device_scan_icon_size"
+                android:layout_height="@dimen/measurement_add_device_scan_icon_size"
+                android:gravity="center"
+                android:src="@drawable/choose_btn" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/measurement_add_device_scan_str_offset">
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:textSize="@dimen/measurement_add_device_scan_text_size"
+            android:text="@string/scan_qr_to_connect_device"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_hight_line"
+        android:background="@color/darkgray" />
+
+    <LinearLayout
+        android:id="@+id/add_water_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurement_add_device_list_height"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:onClick="addMeasurement">
+
+        <LinearLayout
+            android:layout_width="@dimen/measurement_add_device_list_width"
+            android:layout_height="@dimen/measurement_add_device_list_height"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/measurement_add_device_list_icon_size"
+                android:layout_height="@dimen/measurement_add_device_list_icon_size"
+                android:gravity="center"
+                android:src="@drawable/choose_icon_1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/measurement_add_device_list_text_bg_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="@string/water_usage_reader"
+            android:textSize="@dimen/measurement_add_device_list_text_size"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80px"
+                android:gravity="right"
+                android:src="@drawable/u150" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_hight_line"
+        android:background="@color/darkgray" />
+
+    <LinearLayout
+        android:id="@+id/add_gas_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurement_add_device_list_height"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:onClick="addMeasurement">
+
+        <LinearLayout
+            android:layout_width="@dimen/measurement_add_device_list_width"
+            android:layout_height="@dimen/measurement_add_device_list_height"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/measurement_add_device_list_icon_size"
+                android:layout_height="@dimen/measurement_add_device_list_icon_size"
+                android:gravity="center"
+                android:src="@drawable/choose_icon_2" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/measurement_add_device_list_text_bg_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="@string/gas_usage_reader"
+            android:textSize="@dimen/measurement_add_device_list_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80px"
+                android:gravity="right"
+                android:src="@drawable/u150" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_hight_line"
+        android:background="@color/darkgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurement_add_device_list_height"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/measurement_add_device_list_width"
+                android:layout_height="@dimen/measurement_add_device_list_height"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/measurement_add_device_list_icon_size"
+                    android:layout_height="@dimen/measurement_add_device_list_icon_size"
+                    android:gravity="center"
+                    android:src="@drawable/choose_icon_3" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/measurement_add_device_list_text_bg_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="@string/gas_safe_checker"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/measurement_add_device_list_text_size" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_hight_line"
+        android:background="@color/darkgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurement_add_device_list_height"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/measurement_add_device_list_width"
+            android:layout_height="@dimen/measurement_add_device_list_height"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/measurement_add_device_list_icon_size"
+                android:layout_height="@dimen/measurement_add_device_list_icon_size"
+                android:gravity="center"
+                android:src="@drawable/choose_icon_4"  />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/measurement_add_device_list_text_bg_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="@string/air_safe_checker"
+            android:textSize="@dimen/measurement_add_device_list_text_size"
+            android:textColor="@color/darkgray"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_hight_line"
+        android:background="@color/darkgray" />
+</LinearLayout>

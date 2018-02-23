@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:actionbar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.elook.client.ui.ELookActionBar
+        android:id="@+id/registe_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        actionbar:subTitleText="@string/login"
+        actionbar:titleText="@string/registe" />
+
+    <FrameLayout
+        android:id="@+id/registe_must_info_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regist_edit_list_height"
+                android:layout_marginTop="@dimen/regist_list_top_offset"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:textSize="@dimen/regist_edit_text_height"
+                    android:text="@string/phone_number" />
+
+                <EditText
+                    android:id="@+id/registe_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:background="@null"
+                    android:textSize="@dimen/regist_edit_text_height"
+                    android:inputType="number"
+                    android:maxLength="11"/>/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regist_edit_list_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:textSize="@dimen/regist_edit_text_height"
+                    android:text="@string/phone_verify_code" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/registe_phone_verify_code"
+                        android:layout_width="@dimen/regist_edit_text_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:textSize="@dimen/regist_edit_text_height"
+                        android:inputType="number"/>
+
+                    <Button
+                        android:id="@+id/registe_get_phone_verify_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/button_pressed_background"
+                        android:text="@string/get_phone_verify_code"
+                        android:textColor="@drawable/item_selector_color_2"
+                        android:textSize="@dimen/regist_edit_sub_text_height" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regist_edit_list_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:textSize="@dimen/regist_edit_text_height"
+                    android:text="@string/setup_password" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/registe_password"
+                        android:layout_width="@dimen/regist_edit_text_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:textSize="@dimen/regist_edit_text_height"
+                        android:inputType="textPassword"/>
+
+                    <Button
+                        android:id="@+id/registe_show_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/button_pressed_background"
+                        android:text="@string/show_passwd"
+                        android:textColor="@drawable/item_selector_color_2"
+                        android:textSize="@dimen/regist_edit_sub_text_height" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/registe_agreed_with_licence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:text="@string/i_have_read_licence"
+                    android:textSize="@dimen/regist_edit_mid_text_height" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:text="@string/user_licence"
+                    android:textColor="@color/textBlue"
+                    android:textSize="@dimen/regist_edit_sub_text_height"
+                    android:onClick="showUserLicence"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/registe_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_pressed_background"
+                android:layout_marginLeft="@dimen/regist_list_left_offset"
+                android:layout_marginRight="@dimen/regist_list_left_offset"
+                android:layout_marginTop="@dimen/regist_button_top_offset"
+                android:text="@string/registe" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/registe_extension_info_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regist_edit_list_height"
+                android:layout_marginTop="@dimen/regist_list_top_offset"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_address"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:textSize="@dimen/regist_edit_text_height" />
+
+                <EditText
+                    android:id="@+id/registe_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textSize="@dimen/regist_edit_text_height"  />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regist_edit_list_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:textSize="@dimen/regist_edit_text_height" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/registe_user_address"
+                        android:layout_width="@dimen/regist_edit_text_location_width"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:textSize="@dimen/regist_edit_text_height" />
+                    <Button
+                        android:id="@+id/registe_locate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/button_pressed_background"
+                        android:text="@string/locate"
+                        android:textColor="@drawable/item_selector_color_2"
+                        android:textSize="@dimen/regist_edit_sub_text_height"  />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regist_edit_list_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:text="@string/detail_address"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/regist_edit_text_height"  />
+
+                <EditText
+                    android:id="@+id/registe_detail_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textSize="@dimen/regist_edit_text_height"  />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/registe_submit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_pressed_background"
+                android:layout_marginLeft="@dimen/regist_list_left_offset"
+                android:layout_marginRight="@dimen/regist_list_left_offset"
+                android:layout_marginTop="@dimen/regist_button_top_offset"
+                android:text="@string/OK" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

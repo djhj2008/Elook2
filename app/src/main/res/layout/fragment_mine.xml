@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/home_fragment_height"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/fragment_mine_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/action_bar_text_size"
+        android:text="@string/person_center"/>
+
+    <RelativeLayout
+        android:id="@+id/fragment_mine_person_photo_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/person_center_photo_bg_height"
+        android:background="@drawable/user_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical">
+        <ImageView
+            android:id="@+id/fragment_mine_person_photo"
+            android:layout_width="@dimen/person_center_photo_width"
+            android:layout_height="@dimen/person_center_photo_height"
+            android:layout_marginTop="@dimen/person_center_photo_margin_top"
+            android:foregroundGravity="center"
+            android:layout_gravity="center"
+            android:src="@drawable/u858"/>
+
+        <TextView
+            android:id="@+id/fragment_mine_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/person_center_phone_number_margin_top"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/person_center_phone_number_text_size"
+            android:maxLength="11"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/user_bg2"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_mine_report_advise_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_center_list_height"
+        android:layout_marginRight="@dimen/person_center_list_margin_h"
+        android:layout_marginLeft="@dimen/person_center_list_margin_h"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="@dimen/person_center_list_icon"
+            android:layout_height="@dimen/person_center_list_icon"
+            android:layout_marginRight="@dimen/person_center_list_icon_margin"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/user_icon1"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/person_center_list_text_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/report_advise"
+            android:textSize="@dimen/person_center_list_text_size" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/fragment_mine_report_advise"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/person_center_list_enter_icon_height"
+                android:gravity="center"
+                android:src="@drawable/u150" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_mine_change_passwd_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_center_list_height"
+        android:layout_marginRight="@dimen/person_center_list_margin_h"
+        android:layout_marginLeft="@dimen/person_center_list_margin_h"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/person_center_list_icon"
+            android:layout_height="@dimen/person_center_list_icon"
+            android:layout_marginRight="@dimen/person_center_list_icon_margin"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/user_icon2" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/person_center_list_text_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/change_password"
+            android:textSize="@dimen/person_center_list_text_size" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/fragment_mine_change_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/person_center_list_enter_icon_height"
+                android:gravity="center"
+                android:src="@drawable/u150" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fragment_mine_about_us_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_center_list_height"
+        android:layout_marginRight="@dimen/person_center_list_margin_h"
+        android:layout_marginLeft="@dimen/person_center_list_margin_h"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/person_center_list_icon"
+            android:layout_height="@dimen/person_center_list_icon"
+            android:layout_marginRight="@dimen/person_center_list_icon_margin"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/user_icon3" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/person_center_list_text_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/about_us"
+            android:textSize="@dimen/person_center_list_text_size" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/fragment_mine_about_us"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/person_center_list_enter_icon_height"
+                android:gravity="center"
+                android:src="@drawable/u150" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fragment_mine_service_phone_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_center_list_height"
+        android:layout_marginRight="@dimen/person_center_list_margin_h"
+        android:layout_marginLeft="@dimen/person_center_list_margin_h"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/person_center_list_icon"
+            android:layout_height="@dimen/person_center_list_icon"
+            android:layout_marginRight="@dimen/person_center_list_icon_margin"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/user_icon4" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/person_center_list_text_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/service_phone_number"
+            android:textSize="@dimen/person_center_list_text_size" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/fragment_mine_service_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/person_center_list_enter_icon_height"
+                android:gravity="center"
+                android:src="@drawable/u150" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_mine_normal_quession_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_center_list_height"
+        android:layout_marginRight="@dimen/person_center_list_margin_h"
+        android:layout_marginLeft="@dimen/person_center_list_margin_h"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/person_center_list_icon"
+            android:layout_height="@dimen/person_center_list_icon"
+            android:layout_marginRight="@dimen/person_center_list_icon_margin"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/user_icon4" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/person_center_list_text_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/normal_quession"
+            android:textSize="@dimen/person_center_list_text_size" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/fragment_mine_normal_quession"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/person_center_list_enter_icon_height"
+                android:gravity="center"
+                android:src="@drawable/u150" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/fragment_mine_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_center_button_height"
+        android:layout_marginTop="@dimen/person_center_button_margin_top"
+        android:background="@drawable/button_pressed_background"
+        android:layout_marginLeft="@dimen/person_center_button_margin_h"
+        android:layout_marginRight="@dimen/person_center_button_margin_h"
+        android:text="@string/logout" />
+    </LinearLayout>
+</LinearLayout>

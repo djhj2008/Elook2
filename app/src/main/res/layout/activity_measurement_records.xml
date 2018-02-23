@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/action_bar_icon"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/action_bar_icon_offset"
+                android:onClick="back"
+                android:src="@drawable/top_bar_back" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/login_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_bar_text_size" />
+        <TextView
+            android:id="@+id/measurement_detail_settings"
+            android:onClick="startSettings"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/login_action_bar_subtitle_offset"
+            android:layout_marginRight="@dimen/login_action_bar_subtitle_offset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_action_bar_sub_title_font_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/measurement_detail_pattern_wrapper_height"
+        android:paddingLeft="@dimen/measurement_detail_pattern_wrapper_paddingLeft"
+        android:paddingRight="@dimen/measurement_detail_pattern_wrapper_paddingRight"
+        android:background="@drawable/measurement_detail_pattern_gradient_bg"
+        android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/activity_measurement_record_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/measurement_detail_pattern_wrapper_paddingTop"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/activity_measurement_record_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_head_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/day"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="@dimen/measurement_detail_pattern_button_text" />
+
+
+            <RadioButton
+                android:id="@+id/activity_measurement_record_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/week"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="@dimen/measurement_detail_pattern_button_text" />
+
+            <RadioButton
+                android:id="@+id/activity_measurement_record_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/month"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="@dimen/measurement_detail_pattern_button_text" />
+
+            <RadioButton
+                android:id="@+id/activity_measurement_record_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_tail_bg"
+                android:clickable="true"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/year"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="@dimen/measurement_detail_pattern_button_text" />
+        </RadioGroup>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/activity_measurement_record_check_way_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/measurement_detail_parttern_padding_top"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/measurement_detail_record_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/measurment_notify_msg_height"
+                    android:layout_gravity="center"
+                    android:background="@color/lightyellow"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:id="@+id/measurement_detail_record_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="left|center"
+                        android:textSize="@dimen/measurment_notify_msg_text_size"
+                        android:text="@string/device_connected_state" />
+
+                    <Button
+                        android:id="@+id/activity_measurement_record_reconnect_device"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/measurment_notify_msg_button_height"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/measurment_notify_msg_text_size"
+                        android:background="@drawable/white_button_pressed_bg"
+                        android:textColor="@drawable/text_button_textcolor"
+                        android:text="@string/reconnected_device" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/measurment_notify_msg_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/measurment_notify_msg_top"
+                    android:background="@color/lightyellow"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="6"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="left|center"
+                        android:textSize="@dimen/measurment_notify_msg_text_size"
+                        android:text="@string/low_battery_warning" />
+
+                    <Button
+                        android:id="@+id/activity_measurement_record_replaced_battery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/measurment_notify_msg_button_height"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/measurment_notify_msg_text_size"
+                        android:background="@drawable/white_button_pressed_bg"
+                        android:textColor="@drawable/text_button_textcolor"
+                        android:text="@string/replaced_battery" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/measurment_notify_list_top"
+                android:background="@drawable/edit_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/remind_usage_up_warpper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/measurment_notify_list_margin"
+                    android:layout_marginBottom="@dimen/measurment_notify_list_margin"
+                    android:layout_marginRight="@dimen/measurment_notify_list_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="上限提醒 ：" />
+
+                    <TextView
+                        android:id="@+id/remind_usage_up_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1天用量超过 30" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical">
+                        <ToggleButton
+                            android:id="@+id/remind_usage_up_switcher"
+                            android:layout_width="@dimen/measurment_notify_list_togglebutton_width"
+                            android:layout_height="@dimen/measurment_notify_list_togglebutton_height"
+                            android:background="@drawable/switcher_off"
+                            android:textOn="@null"
+                            android:textOff="@null"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/measurment_notify_sub_rules_line"
+                    android:background="@color/lightgray" />
+
+                <LinearLayout
+                    android:id="@+id/no_usage_warpper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/measurment_notify_list_margin"
+                    android:layout_marginBottom="@dimen/measurment_notify_list_margin"
+                    android:layout_marginRight="@dimen/measurment_notify_list_margin"
+                    android:layout_weight="1"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/remind_no_usage" />
+
+                    <TextView
+                        android:id="@+id/no_usage_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/remind_no_usage_3_day" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical">
+                        <ToggleButton
+                            android:id="@+id/no_usage_switcher"
+                            android:layout_width="@dimen/measurment_notify_list_togglebutton_width"
+                            android:layout_height="@dimen/measurment_notify_list_togglebutton_height"
+                            android:background="@drawable/switcher_off"
+                            android:textOn="@null"
+                            android:textOff="@null"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/measurment_notify_add_notify_button_offset"
+                android:layout_marginRight="@dimen/measurment_notify_add_notify_button_offset"
+                android:gravity="center"
+                android:onClick="startaddNotify"
+                android:clickable="true"
+                android:padding="@dimen/measurment_notify_add_notify_button_padding"
+                android:text="@string/add_notification"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/measurment_notify_add_notify_button_text_size" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/measurment_notify_rules_line"
+            android:background="@color/lightgray" />
+        <LinearLayout
+            android:id="@+id/measurement_notify_usageup_warpper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/measurment_notify_list_margin"
+            android:layout_marginBottom="@dimen/measurment_notify_list_margin"
+            android:layout_marginRight="@dimen/measurment_notify_list_margin"
+            android:layout_marginLeft="@dimen/measurment_notify_list_margin"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/measurment_notify_list_icon_size"
+                android:layout_height="@dimen/measurment_notify_list_icon_size"
+                android:src="@drawable/home_icon_orange"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"/>
+            <TextView
+                android:id="@+id/measurement_notify_usageup_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/measurment_notify_sub_list_height"
+                android:gravity="left|center"
+                android:textColor="@color/home_measurement_warning_font_color"
+                android:textSize="@dimen/measurment_notify_nousage_text_size"
+                android:text="@string/remind_no_usage" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/measurment_notify_sub_rules_line"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:id="@+id/measurement_notify_nousage_warpper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/measurment_notify_list_margin"
+            android:layout_marginBottom="@dimen/measurment_notify_list_margin"
+            android:layout_marginRight="@dimen/measurment_notify_list_margin"
+            android:layout_marginLeft="@dimen/measurment_notify_list_margin"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/measurment_notify_list_icon_size"
+                android:layout_height="@dimen/measurment_notify_list_icon_size"
+                android:src="@drawable/home_icon_orange"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"/>
+            <TextView
+                android:id="@+id/measurement_notify_nousage_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/measurment_notify_sub_list_height"
+                android:gravity="left|center"
+                android:textColor="@color/home_measurement_warning_font_color"
+                android:textSize="@dimen/measurment_notify_nousage_text_size"
+                android:text="@string/remind_no_usage" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

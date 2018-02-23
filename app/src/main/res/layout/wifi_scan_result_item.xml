@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/wifi_level"
+        android:layout_height="@dimen/wifi_config_icon_size"
+        android:layout_width="@dimen/wifi_config_icon_size"
+        android:src="@drawable/signal1"
+        android:layout_marginTop="@dimen/wifi_config_list_offset"
+        android:layout_marginBottom="@dimen/wifi_config_list_offset"
+        android:layout_marginLeft="@dimen/wifi_config_list_offset"
+        android:layout_marginRight="@dimen/wifi_config_list_offset"/>
+
+    <TextView
+        android:id="@+id/wifi_ssid"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/wifi_config_list_offset"
+        android:layout_marginRight="@dimen/wifi_config_list_offset"
+        android:layout_alignTop="@id/wifi_level"
+        android:layout_alignBottom="@id/wifi_level"
+        android:layout_toRightOf="@id/wifi_level"
+        android:text="Ecs-RD"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/wifi_connected_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/wifi_level"
+        android:layout_alignBottom="@id/wifi_level"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/wifi_config_list_offset"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="@string/wifi_state_connected"
+        android:gravity="center_vertical"
+        android:visibility="gone"/>
+
+</RelativeLayout>

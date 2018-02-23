@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.0_fddfae3116f0a1b304537caf7f9245a2d14fb495.jar" />
+    </item>
+    <item
+        jar="/home/xy/windows/easylook/EasyLook2/app/libs/AMap_3DMap_V3.3.2_20160525.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3d54f12df6cd88c302679b83169a70cfa747d332">
+        <dex dex="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/pre-dexed/debug/AMap_3DMap_V3.3.2_20160525_a5d38f0a7f42bde0c8f36f2d0dce1bc30c17420a.jar" />
+    </item>
+    <item
+        jar="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.2.0_81652385bbd5981fc4b6d8fef8b0bab355cbd84a.jar" />
+    </item>
+    <item
+        jar="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.2.0_a0c771bdada8f16bf1c0b047054f3b05346b916d.jar" />
+    </item>
+    <item
+        jar="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.1.0_76036f54a32dff010affefec353271f7d354ae20.jar" />
+    </item>
+    <item
+        jar="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.1.0_c3e93cce1f925a6815d36f215cc6d99cf5aa50f4.jar" />
+    </item>
+    <item
+        jar="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.2.0_6523bd3ebf68caf3208d30c98e09c115e1a9914f.jar" />
+    </item>
+    <item
+        jar="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.2.0_a4a32ba708565af7947cee93668aff4065b8a633.jar" />
+    </item>
+    <item
+        jar="/home/xy/windows/easylook/EasyLook2/app/libs/AMap_Location_V2.6.0_20160628.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="efc1d37e992c7e1e092e6970730e8cbfe699167d">
+        <dex dex="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/pre-dexed/debug/AMap_Location_V2.6.0_20160628_3dba40cd30de687259d478445132681b7d10f175.jar" />
+    </item>
+    <item
+        jar="/home/xy/windows/easylook/EasyLook2/app/libs/AMap_Search_V3.3.0_20160616.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c48cb8f3e8bde93009a28c13b0f7b984b3039d3b">
+        <dex dex="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/pre-dexed/debug/AMap_Search_V3.3.0_20160616_0d486ccd250176f7223873acce72d4696b4bc7f8.jar" />
+    </item>
+    <item
+        jar="/home/xy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.0/support-annotations-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="/home/xy/windows/easylook/EasyLook2/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.0_d0de8ae360714d4814922a25b0525bbb5fbe3c8b.jar" />
+    </item>
+
+</items>

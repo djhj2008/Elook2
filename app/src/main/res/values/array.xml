@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>每日</item>
+        <item>每周</item>
+        <item>每月</item>
+    </string-array>
+    <string-array name="updelay_spingarr">
+        <item>常规模式-每天读取一次</item>
+        <item>省电模式-每三天读取一次</item>
+        <item>超省电模式-每六天读取一次</item>
+    </string-array>
+</resources>

@@ -1,0 +1,289 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">EasyLook</string>
+    <string name="easy_look_big">EASYLOOK</string>
+    <string name="easy_look_cn">智能家居平台</string>
+    <string name="registe">注册</string>
+    <string name="login">登录</string>
+    <string name="phone_number">手机号</string>
+    <string name="phone_verify_code">验证码</string>
+    <string name="get_phone_verify_code">获取验证码</string>
+    <string name="setup_password">设置密码</string>
+    <string name="login_password">密 码</string>
+    <string name="show_passwd">显示</string>
+    <string name="i_have_read_licence">我已阅读并同意</string>
+    <string name="user_licence">用户注册协议</string>
+
+    <string name="email_address"> 邮箱地址 ：</string>
+    <string name="location">所在的小区：</string>
+    <string name="detail_address">详细地址：</string>
+    <string name="locate">定位</string>
+    <string name="OK">确定</string>
+    <string name="Cancel">Cancel</string>
+    <string name="msg_verify_code">获取短信验证码</string>
+    <string name="verify_code_timeout"><xliff:g id="timer">%1d</xliff:g>s后可重新获取验证码</string>
+
+    <string name="next_step">下一步</string>
+    <string name="find_password">找回密码</string>
+    <string name="input_old_password">输入原密码 ：</string>
+    <string name="input_new_password">输入新密码 ：</string>
+    <string name="confirm_new_password">确认新密码 ：</string>
+    <string name="confirm_change_pass_word">确认修改密码</string>
+    <string name="hello">m<sup>2</sup></string>
+    <string name="change_pass_word_success">修改成功.</string>
+    <string name="change_pass_word_fail">修改失败.</string>
+    <string name="old_pass_word_fail">原密码错误.</string>
+    <string name="confirm_pass_word_fail">新密码输入不匹配.</string>
+
+    <string name="main_fragment">首页</string>
+    <string name="notification">消息</string>
+    <string name="service">服务</string>
+    <string name="mine">我的</string>
+    <string name="main_fragment_tag">首页</string>
+    <string name="notification_tag">消息</string>
+    <string name="service_tag">服务</string>
+    <string name="mine_tag">我的</string>
+
+    <string name="add_device">+ 添加新设备</string>
+    <string name="check_your_device">智能水表、煤气表随时查看</string>
+    <string name="measurement_water">智能水表</string>
+    <string name="measurement_water_wifi">水表(WIFI)</string>
+    <string name="measurement_water_gprs">水表(GPRS)</string>
+    <string name="measurement_electric">电表</string>
+    <string name="measurement_unknow">未知设备</string>
+
+    <string name="settings">设置</string>
+    <string name="the_way_of_check">查看方式：</string>
+    <string name="day">日</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+
+    <string name="check_all_records">查看全部</string>
+    <string name="device_connected_state">设备链接状态：断开链接</string>
+    <string name="device_state_offline">断开</string>
+    <string name="reconnected_device">重新链接</string>
+    <string name="low_battery_warning">低电量提醒，请尽快更换电池</string>
+    <string name="replaced_battery">已更换，不提醒</string>
+    <string name="add_notification">+ 添加新提醒</string>
+    <string name="all_records">全部列表</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">放开以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">载入中</string>
+    <string name="pull_to_refresh_tap_label">点击这里刷新</string>
+    <string name="config_title">提示</string>
+    <string name="config_ok">确认</string>
+    <string name="config_cancel">取消</string>
+    <string name="refreshing">正在刷新，请稍等</string>
+    <string name="config_saving">正在保存，请稍等</string>
+    <string name="config_success">设置成功.</string>
+    <string name="config_failed">设置失败.</string>
+    <string name="about_app">关于此应用</string>
+    <string name="app_version">程序版本:</string>
+    <string name="contact_us">联系我们:</string>
+    <string name="company_email">contact@easylook.com</string>
+
+    <string name="device_state_preinit">设备未配置</string>
+    <string name="device_state_connect">设备连接配置服务失败</string>
+    <string name="device_state_start_config">设备配置失败</string>
+    <string name="device_state_normal_error">设备配置失败,等待服务器数据</string>
+    <string name="device_state_cannot_parse">无法解析</string>
+    <string name="device_state_config_success">配置成功</string>
+    <string name="device_state_parse_fail">解析失败</string>
+    <string name="device_state_network_error">设备网络异常</string>
+    <string name="device_state_error">设备状态异常</string>
+    <string name="device_state_dev_disconnect">设备异常断开</string>
+    <string name="device_state_dev_led_error">设备LED配置失败</string>
+
+    <string name="device_state_dev_timeout">配置超时,请重新配置.</string>
+    <string name="device_state_dev_ap_error">与设备通信失败,请重新配置.</string>
+    <string name="device_state_dev_wifi_error">连接WIFI失败，请重新配置..</string>
+
+    <string name="measurement_settings_add_notify">请添加提醒.</string>
+    <string name="measurement_settings_usage_day">每日用量超过<xliff:g>%d</xliff:g>m³</string>
+    <string name="measurement_settings_usage_week">每周用量超过<xliff:g>%d</xliff:g>m³</string>
+    <string name="measurement_settings_usage_month">每月用量超过<xliff:g>%d</xliff:g>m³</string>
+    <string name="measurement_settings_nouse"><xliff:g>%d</xliff:g>日数字无变化</string>
+    <string name="measurement_notify_usageup">用量超出<xliff:g>%d</xliff:g></string>
+    <string name="measurement_notify_nouse"><xliff:g>%d</xliff:g>日无使用警告.</string>
+
+    <string name="start_date_time">起始时间</string>
+    <string name="end_date_time">结束时间</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="scan_result">扫描结果</string>
+    <string name="record_value"><xliff:g id="timer">%1d</xliff:g> m\u00B3</string>
+    <string name="activity_measurement_settings">设备信息</string>
+    <string name="measurement_settings_deviceid">ELOOK设备 <xliff:g>%d</xliff:g></string>
+    <string name="measurement_settings_bind_time">初次绑定时间：<xliff:g>%s</xliff:g></string>
+    <string name="measurement_settings_device_office_id">水表官方编号：</string>
+    <string name="measurement_settings_device_office_id_hint">请输入水表号（选填）</string>
+    <string name="measurement_settings_device_nick_name">设备昵称：</string>
+    <string name="measurement_settings_device_nick_name_default">水表昵称</string>
+    <string name="show_pic_of_data_of_every_day">每日数据是否显示图片：</string>
+    <string name="location_of_live">所在小区：</string>
+    <string name="location_of_live_default">      定位</string>
+    <string name="frequence_of_device_data">显示水表读数频率：</string>
+    <string name="frequence_of_device_data_standar_mode">常规模式-一天一次</string>
+    <string name="save">保存</string>
+    <string name="add_new_remind">添加新提醒</string>
+    <string name="usage_up_limit">使用量上限提醒</string>
+    <string name="remind_usage_over">提醒使用过量</string>
+
+    <string name="remind_no_usage">无使用提醒:</string>
+    <string name="remind_no_usage_3_day"> 3日无数字变化</string>
+    <string name="remind_no_usage_notice">可用户观察父母、子女、家人是否在家居住</string>
+
+    <string name="remind_engneer_delay">工程模式时间间隔:</string>
+    <string name="remind_engneer_delay_notice">上报间隔秒数</string>
+    <string name="confirm_add">确认</string>
+
+    <string name="dialog_title">输入上限提醒值</string>
+    <string name="up_limit">上限数：</string>
+    <string name="limit_days">周期：</string>
+    <string name="confirm_add_new_remind">确认添加提醒</string>
+    <string name="day_2">天</string>
+    <string name="day_3">秒</string>
+    <string name="notuseday_notify_dialog_title">设置无使用天数提醒</string>
+
+    <string name="choose_device">选择设备</string>
+    <string name="scan_qr_to_connect_device">直接扫码连接设备</string>
+
+    <string name="water_usage_reader">水表读表器</string>
+    <string name="gas_usage_reader">煤气读表器</string>
+    <string name="gas_safe_checker">煤气检测报警器 （即将上线）</string>
+    <string name="air_safe_checker">室内空气质量检测 （即将上线）</string>
+
+    <string name="scan_qr_activity_title">二维码/条形码</string>
+    <string name="confirm_infomation">确认信息</string>
+    <string name="add_device_id">水表记录仪编号 ： <xliff:g>%d</xliff:g></string>
+    <string name="add_device_process_str">正在添加设备,请稍等...</string>
+    <string name="add_device_fail_str">无法绑定该设备,请确认是否已绑定.</string>
+    <string name="add_device_ok_str">绑定成功.</string>
+    <string name="del_device_ok_str">解除绑定成功.</string>
+    <string name="del_device_fail_str">解除绑定失败.</string>
+    <string name="lowbat_device_id">您的设备:<xliff:g>%s</xliff:g>电池即将用尽,请尽快更换.</string>
+    <string name="set_location_click">点击设置 ： </string>
+
+    <string name="rescan_qr">重新扫描</string>
+    <string name="bind_device_now">立即绑定设备</string>
+    <string name="unbind_device_now">立即解除绑定设备</string>
+    <string name="please_connected_to_wifi">请启动设备后,点击开始,请选择一个可用的WiFi.</string>
+    <string name="connected_to_wifi_finish">WiFi连接完成.</string>
+    <string name="connected_to_wifi">开始连接WIFI.</string>
+    <string name="connected_to_device">开始连接设备, 并且初始化设备.</string>
+    <string name="start_init_device">开始</string>
+    <string name="init_device">配置设备</string>
+    <string name="start_to_config_device">开始初始化设备</string>
+    <string name="start_to_reconnect_to_wifi">设备初始化完成 ,重新连接到WiFi.</string>
+    <string name="finished_init_device">完成配置</string>
+    <string name="auto_init_device">请启动设备后,点击开始自动初始化设备.</string>
+    <string name="verify_init_dev_success">连接服务器,等待设备自动配置.</string>
+    <string name="waiting_wifi_scan_result">正在刷新WiFi列表，请稍等</string>
+    <string name="wifi_scan_results">WiFi列表</string>
+    <string name="ap_password_hint">请输入密码(至少8个字符)</string>
+    <string name="wifi_state_connected">已连接</string>
+    <string name="show_password">显示密码</string>
+    <string name="confirm_wifi_info">请确认WiFi信息</string>
+    <string name="initialize_device">初始化设备</string>
+    <string name="restart_init_device">配置失败,请重启设备后点击开始重新配置.</string>
+    <string name="restart_init_device2">配置中断,请重启设备后点击开始重新配置.</string>
+    <string name="restart_init_device7">设备无法连接网络,请重启设备后点击开始重新配置.</string>
+    <string name="config_dev_wait_confirm">解析成功,等待设备同步数据..</string>
+    <string name="config_dev_led_config">解析第一次图片.重新配置LED类型..</string>
+    <string name="config_dev_config_pre_start">设置服务器参数,设备开始配置...</string>
+    <string name="config_dev_connect_server_count">设备与服务器连接次数:</string>
+
+    <string name="config_dev_ap_scan">查找设备.</string>
+    <string name="config_dev_ap_scan_ok">找到设备.</string>
+    <string name="config_dev_ap_scan_fail">设备不存在,请确认打开设备后,点击开始重新配置.</string>
+    <string name="config_dev_ap_connect">与设备建立连接.</string>
+    <string name="config_dev_ap_connect_ok">连接设备成功.</string>
+    <string name="config_dev_ap_connect_fail">无法与设备连接,请重启设备后,点击开始重新配置.</string>
+    <string name="config_dev_ap_confirm_ap">设备无法链接AP,请检查后重启设备,点击开始重新配置..</string>
+    <string name="config_dev_ap_comunicate">正在与设备建立通信.</string>
+    <string name="config_dev_ap_comunicate_ok">与设备建立通信完成.</string>
+    <string name="config_dev_ap_comunicate_fail">与设备建立通信错误.请重启设备后,点击开始重新配置.</string>
+
+
+    <string name="error_page_title">错误处理</string>
+    <string name="error_code">错误代码:</string>
+    <string name="error_msg">错误内容:</string>
+    <string name="cannot_connect_to_server">无法连接到服务器，请检查您的网络</string>
+    <string name="cannot_get_result_from_server">服务器返回值为空</string>
+    <string name="cannot_parser_result_from_server">无法解析服务器返回的JSON值</string>
+    <string name="errno_reg_phonenumber_format">手机号码格式不正确</string>
+    <string name="errno_reg_user_existed">用户已经存在</string>
+    <string name="errno_reg_failed">注册失败</string>
+    <string name="address_chooser">选择地址</string>
+    <string name="cannot_send_verify_code">无法发送验证码</string>
+    <string name="login_failed">登陆失败</string>
+
+    <string name="person_center">个人中心</string>
+    <string name="change">修改</string>
+    <string name="operation_timeout">操作超时，请稍后再试</string>
+
+    <string name="report_advise">意见反馈</string>
+    <string name="change_password">修改密码</string>
+    <string name="about_us">关于我们</string>
+    <string name="service_phone_number">客服电话</string>
+    <string name="normal_quession">常见问题</string>
+    <string name="logout">退出登录</string>
+
+    <string name="email_error_format">邮箱格式错误</string>
+    <string name="add_user_info_failed">添加用户信息失败</string>
+    <string name="add_user_info_debug_database">内部错误,UserInfo未加入数据库.</string>
+
+    <string name="device_name_should_be_9_digits">设备名字应该是9位数字</string>
+    <string name="device_should_not_be_null">设备上报周期不能为空</string>
+    <string name="device_not_existed">该设备未注册</string>
+    <string name="device_user_not_existed">设备所属的用户不存在</string>
+    <string name="device_not_configed">设备没有进行初始化配置</string>
+    <string name="device_id_should_not_be_repeated">设备ID不能重复</string>
+    <string name="cannont_add_device_to_server">设备无法添加到服务器</string>
+    <string name="add_device_successfully">设备添加成功</string>
+    <string name="bind_successfully">绑定成功</string>
+    <string name="config_display_fp">设置显示频率</string>
+    <string name="choose_fp">选择显示水表读数的频率 ：</string>
+    <string name="config_display_standar">常规模式-  每天读取一次</string>
+    <string name="config_display_save_battery">省电模式-  7天读取一次 </string>
+    <string name="config_display_super_save_battery">超省电模式 - 30天读取一次  </string>
+
+    <string name="config_device_notice">完成基本信息即可查看每日水表走势图！</string>
+    <string name="should_upload_pic_every_day">是否需要上传图片</string>
+
+    <string name="usage"></string>
+
+    <string name="have_checked_device">已检测设备</string>
+    <string name="home_measurement_id">水表 <xliff:g>%d</xliff:g></string>
+    <string name="home_measurement_usage">昨日使用 : <xliff:g>%d</xliff:g>  一周总数 : <xliff:g>%d</xliff:g></string>
+    <string name="home_measurement_current_record_value">当前读数</string>
+    <string name="three_days_no_usage_warning">三天无使用警告</string>
+
+    <string name="record_today">今日</string>
+    <string name="record_week">Week</string>
+    <string name="record_month">Month</string>
+    <string name="record_year">Year</string>
+
+    <string name="notification_system">系统通知</string>
+    <string name="notification_property">物业通知</string>
+    <string name="notification_conmmunity">社区推送</string>
+    <string name="notification_alarm">警报信息</string>
+    <string name="notification_sub_text">即日起推荐好友购买easylook产品,即可获得佣金返现，快来体验吧。</string>
+
+    <string name="service_property">物业保修</string>
+    <string name="service_mobile_phone_pay">生活缴费</string>
+    <string name="service_conmmunity_msg">社区中心</string>
+    <string name="service_connmmunity_service">社区服务</string>
+
+    <string name="notification_process_str">请稍等...</string>
+
+    <string name="notification_message">ELOOK。</string>
+    <string name="dummy_address">北京兆维工业园</string>
+
+    <string name="center_about_us">北京ELOOK科技技术有限公司.</string>
+    <string name="center_call_number">电话:4008008800.</string>
+
+    <string name="init_device_cannot_parse_str">图片无法解析.调整设备并重启后,点击开始,重新配置.</string>
+    <string name="init_device_parse_error_str">数值:<xliff:g>%d</xliff:g>,请查看图片数值.调整设备并重启后,点击开始,重新配置.</string>
+</resources>

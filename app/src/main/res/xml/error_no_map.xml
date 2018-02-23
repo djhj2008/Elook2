@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<map>
+    <int name="OK" value="288" />
+    <int name="ERROR" value="1" />
+</map>

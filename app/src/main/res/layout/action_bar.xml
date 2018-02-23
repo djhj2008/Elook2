@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  actionBarSize is 56dp-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/elook_action_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/action_bar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/action_bar_text_size" />
+
+    <TextView
+        android:id="@+id/action_bar_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/login_action_bar_subtitle_offset"
+        android:layout_marginRight="@dimen/login_action_bar_subtitle_offset"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_action_bar_sub_title_font_size"
+        android:clickable="true"/>
+</RelativeLayout>

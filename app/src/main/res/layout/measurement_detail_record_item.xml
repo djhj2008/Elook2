@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center|left"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/measurement_detail_record_date"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/measurment_records_check_all_list_margin_left"
+        android:paddingTop="@dimen/measurment_records_check_all_list_padding_top"
+        android:textSize="@dimen/measurment_records_check_all_font_size"
+        android:layout_weight="6"
+        android:textColor="@color/gray"
+        android:text="2016-01-01 00:00:00"
+        android:gravity="left|center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/measurment_records_check_all_list_height"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/measurement_detail_record_value"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:paddingTop="@dimen/measurment_records_check_all_list_padding_top"
+            android:textSize="@dimen/measurment_records_check_all_font_size"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:text="[3246]"
+            android:layout_weight="3"
+            android:gravity="left|center" />
+
+        <ImageView
+            android:id="@+id/record_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/measurment_records_check_all_list_image_height"
+            android:visibility="visible"
+            android:paddingTop="@dimen/measurment_records_check_all_list_padding_top"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/list_icon"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:actionbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/action_bar_icon"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/action_bar_icon_offset"
+            android:onClick="back"
+            android:src="@drawable/top_bar_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/action_bar_text_offset"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/change_password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/findpwd_newpasswd_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regist_edit_list_height"
+                android:layout_marginTop="@dimen/regist_list_top_offset"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:textSize="@dimen/regist_edit_text_height"
+                    android:text="@string/input_old_password"
+                    android:layout_gravity="center"
+                    android:textColor="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/change_password"
+                        android:layout_width="@dimen/login_find_pwd_exit_text_width"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/regist_edit_text_height" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regist_edit_list_height"
+                android:layout_marginTop="@dimen/regist_list_top_offset"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:textSize="@dimen/regist_edit_text_height"
+                    android:text="@string/input_new_password"
+                    android:textColor="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/change_new_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:layout_weight="9"
+                        android:textSize="@dimen/regist_edit_text_height" />
+
+                    <Button
+                        android:id="@+id/change_show_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/button_pressed_background"
+                        android:text="@string/show_passwd"
+                        android:layout_weight="1"
+                        android:textColor="@drawable/item_selector_color_2"
+                        android:textSize="@dimen/regist_edit_sub_text_height" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regist_edit_list_height"
+                android:layout_marginTop="@dimen/regist_list_top_offset"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/regist_list_left_offset"
+                    android:textSize="@dimen/regist_edit_text_height"
+                    android:text="@string/confirm_new_password"
+                    android:layout_gravity="center"
+                    android:textColor="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/confirm_password"
+                        android:layout_width="@dimen/login_find_pwd_exit_text_width"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/regist_edit_text_height" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/changepwd_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_pressed_background"
+                android:layout_marginLeft="@dimen/regist_list_left_offset"
+                android:layout_marginRight="@dimen/regist_list_left_offset"
+                android:layout_marginTop="@dimen/regist_button_top_offset"
+                android:text="@string/confirm_change_pass_word" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

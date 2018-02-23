@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/action_bar_icon"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/action_bar_icon_offset"
+            android:onClick="back"
+            android:src="@drawable/top_bar_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/action_bar_text_offset"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/all_records"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/all_push_msgs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/measurment_records_check_all_list_view_offset"
+        android:layout_marginRight="@dimen/measurment_records_check_all_list_view_offset" />
+</LinearLayout>
